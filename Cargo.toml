@@ -1,0 +1,15 @@
+[package]
+name = "eink-arrow"
+version = "0.0.1"
+authors = ["pjsier <pjsier@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+embedded-graphics = { version = "0.7.1"}
+embedded-hal = { version = "0.2.4", features = ["unproven"] }
+linux-embedded-hal = "0.3"
+rppal = "0.12.0"
+epd-waveshare = { git = "https://github.com/caemor/epd-waveshare", rev = "34a0d81", features = ["graphics"] }
+
+[build]
+target = "armv7-unknown-linux-gnueabihf"
